@@ -1,5 +1,5 @@
 import Toast from 'react-native-simple-toast';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Constants} from '../res/index'; 
 
 /**

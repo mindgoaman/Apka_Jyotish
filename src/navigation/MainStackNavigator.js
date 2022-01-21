@@ -8,14 +8,14 @@ import {Colors, Assets} from '../res/index';
 
 import {
   SplashScreen,
-  LoginSignupScreen,
-  SignupScreen,
+  // LoginSignupScreen,
+  // SignupScreen,
   LoginScreen,
-  HomeScreen,
-  HoroscopeScreen,
-  NewsScreen,
-  ProfileScreen,
-  ViewAllAstrologersScreen
+  // HomeScreen,
+  // HoroscopeScreen,
+  // NewsScreen,
+  // ProfileScreen,
+  // ViewAllAstrologersScreen
 } from '../screens/index';
 
 //Stack Navigation
@@ -24,18 +24,18 @@ const MainStackNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
+         headerShown: false,
       }}>
       <Stack.Screen name="Splash" component={SplashScreen} />
       <Stack.Screen name="LoginSignup" component={LoginSignupScreen} />
-      <Stack.Screen name="Login" component={LoginScreen} />
-      <Stack.Screen name="Signup" component={SignupScreen} />
+      {/* <Stack.Screen name="Login" component={LoginScreen} /> */}
+      {/* <Stack.Screen name="Signup" component={SignupScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Horoscope" component={HoroscopeScreen} />
       <Stack.Screen name="News" component={NewsScreen} />
       <Stack.Screen name="Profile" component={ProfileScreen} />
-      <Stack.Screen name="ViewAll" component={ViewAllAstrologersScreen} />
-      <Stack.Screen name="AppDrawer" component={DrawerNav} />
+      <Stack.Screen name="ViewAll" component={ViewAllAstrologersScreen} /> */}
+      {/* <Stack.Screen name="AppDrawer" component={DrawerNav} /> */}
     </Stack.Navigator>
   );
 };

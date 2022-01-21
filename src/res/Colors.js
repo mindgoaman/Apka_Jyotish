@@ -4,10 +4,11 @@
  * Colors which will be used in the complete application should be declared in this file.
  */
 export default {
+
     white: '#FFFFFF',
     black: '#000000',
 
-    primaryColor: '#FAEFA3',
+    primaryColor: '#0B222F',
     secondaryColor: '#682826',
     tertiary: '#8D8D8D',
     quarternary: '#707070',

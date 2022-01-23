@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
 
 //This is mapStateToProps method which get data from Redux store
 const mapStateToProps = (state) => {
-    return state;
+     return state;
 };
 
 
@@ -75,7 +75,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         setLoginData: (payload) => {
-            dispatch(loginAction(payload));
+             dispatch(loginAction(payload));
         },
     };
 };

@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
-import { Colors } from '../../res/index'
+import {View, StyleSheet, Text, TouchableOpacity, Image} from 'react-native';
+import {Colors} from '../../res/index'
+import {Menu, Notification, Wallet} from '../../res/Svg';
 
 const HomeHeader= (props)=> {
         return(
@@ -11,9 +12,15 @@ const HomeHeader= (props)=> {
                         activeOpacity={1}
                         style={styles.leftFirstOnPress}
                     >
-                        <Image 
-                            source={props.leftFirstImage}
-                        />
+                        {  
+                            props.leftFirstImage=='Menu'
+                            ?
+                            <Menu/>
+                            :
+                            <Text style={styles.leftSecondString}>
+                                 {props.leftFirstTitle}
+                            </Text>
+                        }
                     </TouchableOpacity>
                     <TouchableOpacity
                         onPress={props.leftSecondOnPress}
@@ -30,19 +37,19 @@ const HomeHeader= (props)=> {
                         onPress={props.rightSecondOnPress}
                         activeOpacity={1}
                         style={styles.rightSecondOnPress}
-                    >
-                        <Image 
-                            source={props.rightSecondImage}
-                        />
+                    >  
+                         {
+                             props.rightSecondImage&&<Wallet/>
+                         }
                     </TouchableOpacity>
                     <TouchableOpacity 
                         onPress={props.rightFirstOnPress}
                         activeOpacity={1}
                         style={styles.rightFirstOnPress}
                     >
-                        <Image 
-                            source={props.rightFirstImage}
-                        />
+                         {
+                             props.rightFirstImage&&<Notification/>
+                         }
                     </TouchableOpacity>
                 </View>
             </View>
@@ -66,26 +73,25 @@ const styles = StyleSheet.create({
 
     },
     leftFirstOnPress: {
-        paddingVertical: 7,
-        paddingHorizontal: 8
+         paddingVertical: 7,
+         paddingHorizontal: 8
      }   ,
     leftSecondOnPress: {
-        paddingLeft: 15,
+         paddingLeft: 15,
     },
     rightFirstOnPress: {
-        paddingVertical: 6,
-        paddingHorizontal: 13
+         paddingVertical: 6,
+         paddingHorizontal: 13
     },
     rightSecondOnPress: {
-        paddingVertical: 8,
-        paddingHorizontal: 13
+         paddingVertical: 8,
+         paddingHorizontal: 13
     },
     leftSecondString: {
-        fontSize: 25,
-        color: Colors.secondaryColor
+         fontSize: 35,
+         color: Colors.secondaryColor,
     },
-  
-
+    
 })
 
 export default HomeHeader;

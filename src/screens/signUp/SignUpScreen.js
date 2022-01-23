@@ -5,18 +5,25 @@ import {NetworkManager, Utility } from '../../utils/index';
 import {connect} from 'react-redux';
 import {loginAction} from "../../redux/actions";
 import {URL, Strings, Colors} from '../../res/index';
-import {AppButton} from '../../component/index';
+import {AppButton, HomeHeader} from '../../component/index';
 import {AppBg} from '../../res/Svg';
 
 const SignupScreen = (props) => {
     const [isFieldsComplete, setIsFieldsComplete]=useState(false)
     return( 
         <View style={styles.container}>
-             <AppBg/>
+            <AppBg/>
+            <View style={styles.headerContainer}>
+                 <HomeHeader
+                     leftFirstTitle={Strings.register}
+                     leftSecondString={props.backTitle}
+                     leftFirstOnPress={()=>props.navigation.goBack()}
+                />
+            </View>
             <View style={styles.bottomView}>
                 <View style={styles.signupButtonContainer}>
                     <AppButton
-                         onPress={()=>{props.navigation.navigate('Login')}}
+                         onPress={()=>{props.navigation.navigate('Home')}}
                          title={Strings.buttonTitle.submit}
                          titleColor={
                              isFieldsComplete
@@ -33,7 +40,6 @@ const SignupScreen = (props) => {
                              :
                              Colors.buttonColor.secondaryColor
                         }
-                         borderColor={Colors.secondaryColor} 
                     />
                 </View>
             </View>
@@ -46,8 +52,10 @@ const styles = StyleSheet.create({
          flex:  1,
          backgroundColor: Colors.bgColor.primaryColor
     },
+    headerContainer: {
+         position: 'absolute'
+    },
     bottomView: {
-         flex: 1,
          paddingHorizontal: 31,
          position: "absolute",
          bottom: 50,

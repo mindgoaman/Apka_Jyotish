@@ -8,10 +8,10 @@ const AstrologersListComponent = (props) =>{
             return(
                 <View style={styles.usersCardContainer}>
                      <View style={styles.imageContainer}>
-                          <Image
+                          {/* <Image
                               source={Assets.common.userProfile}
                               style={styles.userProfile}
-                          />
+                          /> */}
                      </View>
                      <View style={styles.descreptionContainer}>
                          <View style={styles.astrologerNameContainer}>
@@ -60,9 +60,9 @@ const AstrologersListComponent = (props) =>{
                      </View>
                      <View style={styles.iconContainer}>
                          <TouchableOpacity style={{height: GlobalStyle.size.width / 7 , width:  GlobalStyle.size.width / 7, borderRadius: GlobalStyle.size.width / 14, backgroundColor: 'green', justifyContent: 'center', alignItems: 'center'}}>
-                              <Image
+                              {/* <Image
                                  source={Assets.common.call}
-                              />
+                              /> */}
                          </TouchableOpacity>
                      </View>
                 </View>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {HomeHeader, CategoryComponent, BannerComponet, AstrologersListComponent} from '../../component/index';
-import {Colors, Assets, Strings } from '../../res/index';
+import {Colors, Strings} from '../../res/index';
 
 const HomeScreen = (props) => {
 
@@ -10,12 +10,12 @@ const HomeScreen = (props) => {
         <View style={styles.container}>
              <View style={styles.headerContainer}>
                 <HomeHeader
-                    leftFirstImage={Assets.common.more}
+                    leftFirstImage={'Menu'}
                     leftFirstOnPress={() => props.navigation.openDrawer()}
                     leftSecondString={Strings.aapkaaJyotish}
-                    rightSecondImage={Assets.common.wallet}
+                    rightSecondImage={'Wallet'}
                     rightSecondOnPress={()=>alert(Strings.underDevelopment)}
-                    rightFirstImage={Assets.common.notification}
+                    rightFirstImage={'Notification'}
                     rightFirstOnPress={()=>alert(Strings.underDevelopment)}
                     {...props}
                 />

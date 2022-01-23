@@ -1,19 +1,34 @@
 import React, {useState} from 'react';
 import {View, Text, Image, StyleSheet} from  'react-native';
 import {Colors, Strings } from '../../res/index';
-import {AppButton} from '../../component/index'
+import {AppButton, HomeHeader} from '../../component/index'
 import {AppBg} from '../../res/Svg';
 
 const LoginScreen = (props) => {
     const [isPhoneNumberComplete, setIsPhoneNumberComplete]=useState(false)
     return( 
         <View style={styles.container}>
-             <AppBg/>
+            <AppBg/>
+            <View style={styles.headerContainer}>
+                 <HomeHeader
+                     leftFirstTitle={Strings.login}
+                     leftSecondString={props.backTitle}
+                     leftFirstOnPress={()=>props.navigation.goBack()}
+                />
+            </View>
+            <View style={{position: 'absolute', top: 260, left: 15}}>
+                    <Text style={{fontSize: 30, color: Colors.common.white}}>
+                         {Strings.welcomeBack}
+                    </Text>
+                    <Text style={{fontSize: 18, color: Colors.common.white, lineHeight: 25}}>
+                         {Strings.loginToContinue}
+                    </Text>
+            </View>
             <View style={styles.bottomView}>
                 <View style={styles.signupButtonContainer}>
                     <AppButton
-                         onPress={()=>{props.navigation.navigate('Login')}}
-                         title={Strings.login}
+                         onPress={()=>{props.navigation.navigate('Home')}}
+                         title={Strings.sendOtp}
                          titleColor={
                              isPhoneNumberComplete
                              ?
@@ -29,7 +44,6 @@ const LoginScreen = (props) => {
                              :
                              Colors.buttonColor.secondaryColor
                         }
-                         borderColor={Colors.secondaryColor} 
                     />
                 </View>
                 <Text style={styles.byContinuingPPTNCTxt}>
@@ -44,6 +58,9 @@ const styles = StyleSheet.create({
     container: {
          flex:  1,
          backgroundColor: Colors.bgColor.primaryColor
+    },
+    headerContainer: {
+        position: 'absolute'
     },
     bottomView: {
          flex: 1,

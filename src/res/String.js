@@ -3,10 +3,13 @@
  * Strings which will be used in the UI screens should be declared in this file.
  */
 export default {
-    welcome: 'Welcome',
+    welcomeBack: 'Welcome Back!',
+    loginToContinue: 'Login to continue...',
     aapkaaJyotish: 'aapkaajyotish',
     login: 'Login',
     signup: 'Signup',
+    register: 'Register',
+    sendOtp: 'Send OTP',
     loginViaMobileNo: 'Login via mobile number',
     signupViaMobileNo: 'Signup via mobile number',
     byContinuingPPTNC:

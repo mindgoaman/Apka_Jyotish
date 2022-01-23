@@ -28,6 +28,9 @@ export default {
       emaild: 'Email ID',
       phoneNo: 'Phone No.'
     },
+    buttonTitle: {
+       submit: 'Submit'
+    },
     categoryListData:[
       {
           title:  'All',
@@ -78,10 +81,8 @@ export default {
     {},
 ],
 errorMessage: {
-  pleaseEnterName: 'Please enter name',
-  pleaseEnterEmail: 'Please enter email',
-  pleaseEnterMobile: 'Please enter mobile'
-
-  
+   pleaseEnterName: 'Please enter name',
+   pleaseEnterEmail: 'Please enter email',
+   pleaseEnterMobile: 'Please enter mobile'
 }
 };

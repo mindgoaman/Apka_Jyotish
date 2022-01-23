@@ -25,6 +25,7 @@ export default {
 
      buttonColor: {
          primaryColor: '#F2C262',
+         secondaryColor: '#989898'
      },
 
      common: {

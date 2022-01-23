@@ -89,8 +89,8 @@ const styles=StyleSheet.create({
         flex: 1
     },
     bannerContainer: {
-        backgroundColor: Colors.octaColor,
-        height: height/5.72,
+        backgroundColor: Colors.banner.primaryColor,
+        height: height/6.90,
         width: width/1.12,
         marginLeft: 10,
         marginRight: 5,
@@ -112,8 +112,8 @@ const styles=StyleSheet.create({
         height: 12,
         width: 12,
         borderRadius: 6,
-        backgroundColor: Colors.white,
-        borderColor:  Colors.white,
+        backgroundColor: Colors.common.white,
+        borderColor:  Colors.common.white,
         borderWidth: 1,
         marginHorizontal: 5,
     }

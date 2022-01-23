@@ -18,6 +18,10 @@ export default {
          primaryColor: '#0B222F',
      },
 
+     banner: {
+         primaryColor: '#409DBA' 
+     },
+
      textColor: {
          primaryColor: '#737373',
          tertiary: '#8D8D8D',
@@ -27,6 +31,7 @@ export default {
          primaryColor: '#F2C262',
          secondaryColor: '#989898'
      },
+
 
      common: {
          white: '#FFFFFF',

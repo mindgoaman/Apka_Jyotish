@@ -97,6 +97,9 @@ const styles=StyleSheet.create({
 
      container: {
          flex: 1,
+         backgroundColor: Colors.bgColor.primaryColor,
+         borderTopLeftRadius: 30,
+         borderTopRightRadius: 30
      },
      userListHeaderContainer: {
          flexDirection: 'row',

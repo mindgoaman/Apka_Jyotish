@@ -88,8 +88,8 @@ const styles = StyleSheet.create({
          paddingHorizontal: 13
     },
     leftSecondString: {
-         fontSize: 35,
-         color: Colors.secondaryColor,
+         fontSize: 33,
+         color: Colors.bgColor.primaryColor,
     },
     
 })

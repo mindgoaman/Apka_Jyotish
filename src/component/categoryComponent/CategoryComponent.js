@@ -45,7 +45,7 @@ const styles=StyleSheet.create({
     categoryCircle: { 
          height: height/15,
          width: height/15,
-         backgroundColor: Colors.tertiary,
+         backgroundColor: Colors.common.white,
          borderRadius: height/2
     },
     categoryTitle: {

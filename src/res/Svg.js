@@ -1,5 +1,7 @@
-import Splash from './assets/splash.svg'
+ import Splash from './assets/splash.svg';
+ import AppBg from './assets/appBg.svg';
 
-export {
-      Splash
-}
+ export {
+       Splash,
+       AppBg
+ }

@@ -4,23 +4,32 @@
  * Colors which will be used in the complete application should be declared in this file.
  */
 export default {
+     secondaryColor: '#682826',
+     tertiary: '#8D8D8D',
+     quarternary: '#707070',
+     pentaColor: '#FAF7E0',
+     hexaColor: '#515151',
+     septaColor: '#3300FF',
+     octaColor: '#671167',
+     nonaColor: '#972C28',
+     decaColor: '#DE0808',
 
-    white: '#FFFFFF',
-    black: '#000000',
+     bgColor: {
+         primaryColor: '#0B222F',
+     },
 
-    primaryColor: '#0B222F',
-    secondaryColor: '#682826',
-    tertiary: '#8D8D8D',
-    quarternary: '#707070',
-    pentaColor: '#FAF7E0',
-    hexaColor: '#515151',
-    septaColor: '#3300FF',
-    octaColor: '#671167',
-    nonaColor: '#972C28',
-    decaColor: '#DE0808',
+     textColor: {
+         primaryColor: '#737373',
+         tertiary: '#8D8D8D',
+     },
 
-    textColor: {
-        primaryColor: '#737373'
-    }
+     buttonColor: {
+         primaryColor: '#F2C262',
+     },
+
+     common: {
+         white: '#FFFFFF',
+         black: '#000000',
+     }
    
 }

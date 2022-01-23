@@ -1,41 +1,36 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from  'react-native';
-import { Colors, Assets, Strings } from '../../res/index';
-import { AppButton } from '../../component/index'
+import {Colors, Strings } from '../../res/index';
+import {AppButton} from '../../component/index'
+import {AppBg} from '../../res/Svg';
 
 const LoginSignupScreen = (props) => {
-    return(
+    return( 
         <View style={styles.container}>
-            <View style={styles.topView}>
-                <Image 
-                    source={Assets.common.appLogo}
-                    style={styles.logo}
-                />
-                <Text style={styles.aapkaaJyotishTxt}>{Strings.aapkaaJyotish}</Text>
-            </View>
+             <AppBg/>
             <View style={styles.bottomView}>
                 <View style={styles.loginButtonContainer}>
                     <AppButton
-                        onPress={()=>{props.navigation.navigate('Login')}}
-                        title={Strings.login}
-                        titleColor={Colors.white}
-                        titleFontSize={16}
-                        backgroundColor={Colors.secondaryColor}
-                        borderColor={Colors.secondaryColor} 
+                         onPress={()=>{props.navigation.navigate('Login')}}
+                         title={Strings.login}
+                         titleColor={Colors.bgColor.primaryColor}
+                         titleFontSize={16}
+                         backgroundColor={Colors.buttonColor.primaryColor}
+                         borderColor={Colors.secondaryColor} 
                     />
                 </View>
                 <View style={styles.signupButtonContainer}>
                     <AppButton
-                        onPress={()=>{props.navigation.navigate('Signup')}}
-                        title={Strings.signup}
-                        titleColor={Colors.secondaryColor}
-                        titleFontSize={16}
-                        backgroundColor={Colors.primaryColor}
-                        borderColor={Colors.secondaryColor}
+                         onPress={()=>{props.navigation.navigate('Signup')}}
+                         title={Strings.signup}
+                         titleColor={Colors.buttonColor.primaryColor}
+                         titleFontSize={16}
+                         backgroundColor={Colors.primaryColor}
+                         borderColor={Colors.buttonColor.primaryColor}
                     />
                 </View>
                 <Text style={styles.byContinuingPPTNCTxt}>
-                    {Strings.byContinuingPPTNC}
+                     {Strings.byContinuingPPTNC}
                 </Text>
             </View>
         </View>
@@ -44,35 +39,25 @@ const LoginSignupScreen = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex:  11,
-        backgroundColor: Colors.primaryColor
-    },
-    topView: {
-        flex:  7,
-        justifyContent: 'center',
-        alignItems: 'center'
+         flex:  1,
+         backgroundColor: Colors.bgColor.primaryColor
     },
     bottomView: {
-        flex: 4,
-        paddingHorizontal: 31,
-    },
-    aapkaaJyotishTxt: {
-        fontSize: 30,
-        paddingTop: 8,
-        color: Colors.secondaryColor
-    },
-    logo: {
-        height: 150,
-        width: 150
+         flex: 1,
+         paddingHorizontal: 31,
+         position: "absolute",
+         bottom: 50,
+         left: 0,
+         right: 0
     },
     signupButtonContainer: {
-        paddingTop: 36,
-        paddingBottom: 56
+         paddingTop: 36,
+         paddingBottom: 56
     },
     byContinuingPPTNCTxt: {
-        fontSize: 14,
-        textAlign: 'center',
-        color: Colors.tertiary,
+         fontSize: 14,
+         textAlign: 'center',
+         color: Colors.textColor.tertiary,
     }
 })
 

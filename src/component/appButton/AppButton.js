@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import {TouchableOpacity, Text} from 'react-native';
 
 const AppButton = (props) => { 
     return (
@@ -9,7 +9,7 @@ const AppButton = (props) => {
             style={{
                 height: 50,
                 backgroundColor: props.backgroundColor,
-                borderRadius: 10,
+                borderRadius: 25,
                 alignItems: 'center',
                 justifyContent: 'center',
                 borderWidth: 1,

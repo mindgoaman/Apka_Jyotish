@@ -1,3 +1,4 @@
+import OnBoardingComponent from './onBoarding/OnBoardingComponent';
 import HomeHeader from './homeHeader/HomeHeader';
 import SideMenu from './sideMenu/SideMenu'; 
 import AppButton from './appButton/AppButton'; 
@@ -10,6 +11,7 @@ import Loader from './loader/Loader';
 import OtpComponent from './otpComponent/OtpComponent';
 
 export {
+    OnBoardingComponent,
     HomeHeader,
     SideMenu,
     AppButton,
@@ -19,5 +21,5 @@ export {
     AstrologersListComponent,
     TextInputComponent,
     Loader,
-    OtpComponent
+    OtpComponent,
 }

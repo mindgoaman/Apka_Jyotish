@@ -1,4 +1,5 @@
 import SplashScreen from '../screens/splashScreen/SplashScreen';
+import OnBoardingScreen from '../screens/onBoarding/OnBoardingScreen';
 import LoginSignupScreen from '../screens/loginSignUp/LoginSignUpScreen';
 import SignupScreen from '../screens/signUp/SignUpScreen';
 import LoginScreen from '../screens/login/LoginScreen';
@@ -10,6 +11,7 @@ import ViewAllAstrologersScreen from '../screens/viewAllAstrologer/ViewAllAstrol
 
 export {
     SplashScreen,
+    OnBoardingScreen,
     LoginSignupScreen,
     LoginScreen,
     SignupScreen,

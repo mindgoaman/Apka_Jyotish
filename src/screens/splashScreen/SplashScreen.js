@@ -5,7 +5,7 @@ import {Splash} from '../../res/Svg';
 
 const SplashScreen = (props) =>{
      setTimeout(() => {
-        props.navigation.replace('LoginSignup')
+        props.navigation.replace('OnBoarding')
       }, 1000)
 
     return(

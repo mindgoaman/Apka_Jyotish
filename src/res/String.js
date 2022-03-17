@@ -1,3 +1,4 @@
+import {Menu, Notification, Wallet} from '../res/Svg'
 /**
  *
  * Strings which will be used in the UI screens should be declared in this file.
@@ -87,5 +88,28 @@ errorMessage: {
    pleaseEnterName: 'Please enter name',
    pleaseEnterEmail: 'Please enter email',
    pleaseEnterMobile: 'Please enter mobile'
-}
+},
+onBoarding: {
+  skip: 'Skip',
+  onBoardingData: [
+    {
+      title1: 'Screen1',
+      img: Menu,
+    },
+    {
+      title1: 'Screen2',
+      img: Menu,
+      img: Notification,
+    },
+    {
+      title1: 'Screen3',
+      img: Wallet,
+    },
+    {
+      title1: 'Screen4',
+      img: Menu,
+      img: Notification,
+    },
+  ],
+},
 };

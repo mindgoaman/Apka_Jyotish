@@ -15,7 +15,8 @@ import {
   HoroscopeScreen,
   NewsScreen,
   ProfileScreen,
-  ViewAllAstrologersScreen
+  ViewAllAstrologersScreen,
+  OnBoardingScreen
 } from '../screens/index';
 
 //Stack Navigation
@@ -27,6 +28,7 @@ const MainStackNavigator = () => {
          headerShown: false,
       }}>
       <Stack.Screen name="Splash" component={SplashScreen} />
+      <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
       <Stack.Screen name="LoginSignup" component={LoginSignupScreen} />
       <Stack.Screen name="Login" component={LoginScreen} /> 
       <Stack.Screen name="Signup" component={SignupScreen} />

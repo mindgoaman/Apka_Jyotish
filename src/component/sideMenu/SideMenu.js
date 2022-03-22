@@ -69,10 +69,10 @@ const SideMenu = (props) => {
     return (
         <View style={styles.container}>
             <View style={styles.profileDetailsContainer}>
-                <Image
+                {/* <Image
                     source={Assets.common.userProfile}
                     style={{height: 100, width: 100, borderRadius: 50}}
-                />
+                /> */}
                 <View style={{paddingTop: 17}}>
                     <Text style={{fontSize: 20, color: Colors.hexaColor}}>
                         Username

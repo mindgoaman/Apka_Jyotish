@@ -47,7 +47,7 @@ const OnBoardingComponent = (props) => {
                  {
                     onBoardingData.map((item, itemIndex)=>(
                         <View 
-                            key={`item-${itemIndex}`}
+                            key={itemIndex}
                             style={styles.onBoardingContainer}
                         > 
                             <View style={styles.bannerContainer}>

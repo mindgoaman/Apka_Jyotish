@@ -4,7 +4,7 @@ import {HomeHeader, CategoryComponent, BannerComponet, AstrologersListComponent}
 import {Colors, Strings} from '../../res/index';
 
 const HomeScreen = (props) => {
-
+    
     return (
         <View style={styles.container}>
              <View style={styles.headerContainer}>

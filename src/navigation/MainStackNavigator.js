@@ -4,7 +4,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {SideMenu} from '../component/index';
-import {Colors, Assets} from '../res/index';
+import {Colors} from '../res/index';
+import {BottomTabHome,BottomTabNews,BottomTabHoroscope,BottomTabUser} from '../res/Svg';
 
 import {
   SplashScreen,
@@ -47,24 +48,26 @@ const Tab = createBottomTabNavigator();
 const BottomTabsNav = () => {
   return (
     <Tab.Navigator
+       screenOptions={{
+         headerShown: false,
+       }}   
       tabBarOptions={{
-        showLabel: false,
+        showLabel: true,
         style: {
           backgroundColor: Colors.secondaryColor,
           borderTopRightRadius: 0,
           borderTopLeftRadius: 0,
-          height: 60,
-          paddingVertical: 7
         },
-      }}>
+      }}
+      >
       <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <Image
-              source={Assets.common.home}
-              style={{tintColor: focused ? Colors.primaryColor : Colors.white}}
+            <BottomTabHome
+               fill={focused ? Colors.primaryColor : Colors.white}
+              
             />
           ),
         }}
@@ -74,9 +77,8 @@ const BottomTabsNav = () => {
         component={HoroscopeScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <Image
-              source={Assets.common.news}
-              style={{tintColor: focused ? Colors.primaryColor : Colors.white}}
+            <BottomTabNews
+               fill={focused ? Colors.primaryColor : Colors.white}
             />
           ),
         }}
@@ -86,9 +88,8 @@ const BottomTabsNav = () => {
         component={NewsScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <Image
-              source={Assets.common.horoscope}
-              style={{tintColor: focused ? Colors.primaryColor : Colors.white}}
+            <BottomTabHoroscope
+               fill={focused ? Colors.primaryColor : Colors.white}
             />
           ),
         }}
@@ -98,9 +99,8 @@ const BottomTabsNav = () => {
         component={ProfileScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <Image
-              source={Assets.common.profile}
-              style={{tintColor: focused ? Colors.primaryColor : Colors.white}}
+            <BottomTabUser
+               fill={focused ? Colors.primaryColor : Colors.white}
             />
           ),
         }}
@@ -113,7 +113,12 @@ const BottomTabsNav = () => {
 const Drawer = createDrawerNavigator();
 const DrawerNav = () => {
   return (
-    <Drawer.Navigator drawerContent={props => <SideMenu {...props} />}>
+    <Drawer.Navigator
+       screenOptions={{
+         headerShown: false,
+      }}
+       drawerContent={props => <SideMenu {...props} />}
+    >
       <Drawer.Screen name="Home" component={BottomTabsNav} />
       <Drawer.Screen name="Login" component={LoginScreen} />
     </Drawer.Navigator>

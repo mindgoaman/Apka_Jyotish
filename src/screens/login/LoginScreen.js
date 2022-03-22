@@ -27,7 +27,7 @@ const LoginScreen = (props) => {
             <View style={styles.bottomView}>
                 <View style={styles.signupButtonContainer}>
                     <AppButton
-                         onPress={()=>{props.navigation.navigate('Home')}}
+                         onPress={()=>{props.navigation.navigate('AppDrawer')}}
                          title={Strings.sendOtp}
                          titleColor={
                              isPhoneNumberComplete

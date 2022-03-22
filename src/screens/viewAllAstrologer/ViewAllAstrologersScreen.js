@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {Colors, Assets, Strings} from '../../res/index';
 import {HomeHeader, AstrologersListComponent} from '../../component/index';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view'
 
 const astrologersData=[
   {},
@@ -30,9 +30,9 @@ const ViewAllAstrologersScreen =( props )=> {
     <View style={styles.container}>
       <View style={styles.headerContainer}>
         <HomeHeader
-          leftFirstImage={Assets.common.backArrow}
+          // leftFirstImage={Assets.common.backArrow}
           leftSecondString={Strings.astrologers}
-          leftFirstOnPress={() => props.navigation.goBack()}
+          // leftFirstOnPress={() => props.navigation.goBack()}
         />
       </View>
       <View style={styles.bodyContainer}>

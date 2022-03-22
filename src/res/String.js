@@ -6,6 +6,7 @@ import {Menu, Notification, Wallet} from '../res/Svg'
 export default {
     welcomeBack: 'Welcome Back!',
     loginToContinue: 'Login to continue...',
+    registerToContinue: 'Register to continue...',
     aapkaaJyotish: 'aapkaajyotish',
     login: 'Login',
     signup: 'Signup',
@@ -22,7 +23,7 @@ export default {
     termsNConditions: `Terms&Conditions`,
     and: 'and',
     privacyPolicy: 'Privacy Policy',
-    countryCode:'+91 - ',
+    countryCode:'+91',
     astrologersOnline : 'Astrologers Online',
     viewAll: 'View All',
     astrologers: 'Astrologers',

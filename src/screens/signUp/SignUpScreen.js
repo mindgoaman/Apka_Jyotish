@@ -5,8 +5,8 @@ import {NetworkManager, Utility } from '../../utils/index';
 import {connect} from 'react-redux';
 import {loginAction} from "../../redux/actions";
 import {URL, Strings, Colors} from '../../res/index';
-import {AppButton, HomeHeader} from '../../component/index';
-import {AppBg} from '../../res/Svg';
+import {AppButton, HomeHeader, TextInputComponent} from '../../component/index';
+import {AppBg,Phone} from '../../res/Svg';
 
 const SignupScreen = (props) => {
     const [isFieldsComplete, setIsFieldsComplete]=useState(false)
@@ -20,10 +20,59 @@ const SignupScreen = (props) => {
                      leftFirstOnPress={()=>props.navigation.goBack()}
                 />
             </View>
+            <View style={{position: 'absolute', top: 260, left: 15}}>
+                    <Text style={{fontSize: 30, color: Colors.common.white}}>
+                         {Strings.welcomeBack}
+                    </Text>
+                    <Text style={{fontSize: 18, color: Colors.common.white, lineHeight: 25}}>
+                         {Strings.registerToContinue}
+                    </Text>
+                   
+            </View>
+            <View style={{position: 'absolute', top: 330, left: 20, right: 20}}>
+                 <TextInputComponent
+                     showCountryCode={true}
+                     righIcon={<Phone/>}
+                    //  onChangeText={setMobile}
+                    //  value={mobile}
+                 />  
+            </View>  
+            <View style={{position: 'absolute', top: 390, left: 20, right: 20}}>
+                 <TextInputComponent
+                     showCountryCode={true}
+                     righIcon={<Phone/>}
+                    //  onChangeText={setMobile}
+                    //  value={mobile}
+                 />  
+            </View>  
+            <View style={{position: 'absolute', top: 450, left: 20, right: 20}}>
+                 <TextInputComponent
+                     showCountryCode={true}
+                     righIcon={<Phone/>}
+                    //  onChangeText={setMobile}
+                    //  value={mobile}
+                 />  
+            </View>  
+            <View style={{position: 'absolute', top: 510, left: 20, right: 20}}>
+                 <TextInputComponent
+                     showCountryCode={true}
+                     righIcon={<Phone/>}
+                    //  onChangeText={setMobile}
+                    //  value={mobile}
+                 />  
+            </View>  
+            <View style={{position: 'absolute', top: 570, left: 20, right: 20}}>
+                 <TextInputComponent
+                     showCountryCode={true}
+                     righIcon={<Phone/>}
+                     onChangeText={setIsFieldsComplete}
+                    //  value={mobile}
+                 />  
+            </View>  
             <View style={styles.bottomView}>
                 <View style={styles.signupButtonContainer}>
                     <AppButton
-                         onPress={()=>{props.navigation.navigate('Home')}}
+                         onPress={()=>{props.navigation.navigate('AppDrawer')}}
                          title={Strings.buttonTitle.submit}
                          titleColor={
                              isFieldsComplete
@@ -40,6 +89,7 @@ const SignupScreen = (props) => {
                              :
                              Colors.buttonColor.secondaryColor
                         }
+                        disabled={!isFieldsComplete}
                     />
                 </View>
             </View>

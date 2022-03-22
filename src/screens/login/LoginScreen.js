@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import {View, Text, Image, StyleSheet} from  'react-native';
 import {Colors, Strings } from '../../res/index';
-import {AppButton, HomeHeader} from '../../component/index'
-import {AppBg} from '../../res/Svg';
+import {AppButton,HomeHeader,TextInputComponent} from '../../component/index'
+import {AppBg,Phone} from '../../res/Svg';
 
 const LoginScreen = (props) => {
-    const [isPhoneNumberComplete, setIsPhoneNumberComplete]=useState(false)
+
+    const [mobile, setMobile]=useState('')
+    
     return( 
         <View style={styles.container}>
             <AppBg/>
@@ -23,6 +25,15 @@ const LoginScreen = (props) => {
                     <Text style={{fontSize: 18, color: Colors.common.white, lineHeight: 25}}>
                          {Strings.loginToContinue}
                     </Text>
+                   
+            </View>
+            <View style={{position: 'absolute', top: 430, left: 20, right: 20}}>
+                 <TextInputComponent
+                     showCountryCode={true}
+                     righIcon={<Phone/>}
+                     onChangeText={setMobile}
+                     value={mobile}
+                 />  
             </View>
             <View style={styles.bottomView}>
                 <View style={styles.signupButtonContainer}>
@@ -30,7 +41,7 @@ const LoginScreen = (props) => {
                          onPress={()=>{props.navigation.navigate('AppDrawer')}}
                          title={Strings.sendOtp}
                          titleColor={
-                             isPhoneNumberComplete
+                             mobile.length==10
                              ?
                              Colors.bgColor.primaryColor
                              :
@@ -38,12 +49,13 @@ const LoginScreen = (props) => {
                          }
                          titleFontSize={16}
                          backgroundColor={
-                             isPhoneNumberComplete
+                             mobile.length==10
                              ?
                              Colors.buttonColor.primaryColor
                              :
                              Colors.buttonColor.secondaryColor
                         }
+                        disabled={!(mobile.length==10)}
                     />
                 </View>
                 <Text style={styles.byContinuingPPTNCTxt}>

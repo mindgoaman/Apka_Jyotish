@@ -1,6 +1,6 @@
 import React from 'react';
 import {TextInput, View, StyleSheet, Text} from 'react-native';
-import {Colors, Assets, Strings} from '../../res/index';
+import {Colors,Strings} from '../../res/index';
 
 const TextInputComponent = (props) => {
 
@@ -21,6 +21,7 @@ const TextInputComponent = (props) => {
                     keyboardType={props.showCountryCode ? 'number-pad' : 'default'}
                     {...props}
                 />
+                {props.righIcon}
             </View>
             {props.showTxtInputError&&<View>
                 <Text style={{fontSize: 14, color: Colors.decaColor}}>
@@ -37,18 +38,20 @@ const styles=StyleSheet.create({
          backgroundColor: Colors.white,
          borderRadius: 5,
          borderColor: Colors.tertiary,
-         borderWidth: 1,
+         borderBottomWidth: 1,
          height: 50,
          paddingLeft: 12,
          flexDirection: 'row',
          alignItems: 'center'
     },
     countryCodeTxt: {
-        fontSize: 18
+        fontSize: 18,
+        color: Colors.common.white
     },
     textInput: {
         fontSize: 22,
-        color: Colors.hexaColor,
+        color: Colors.common.white,
+        paddingLeft: 10,
       }
 })
 

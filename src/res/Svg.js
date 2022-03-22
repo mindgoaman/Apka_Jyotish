@@ -1,5 +1,6 @@
  import Splash from './assets/splash.svg';
  import AppBg from './assets/appBg.svg';
+ import Phone from './assets/phone.svg';
  import Menu from './assets/menu.svg';
  import Notification from './assets/notification.svg';
  import Wallet from './assets/wallet.svg';
@@ -11,6 +12,7 @@
  export {
        Splash,
        AppBg,
+       Phone,
        Menu,
        Notification,
        Wallet,

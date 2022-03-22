@@ -5,7 +5,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {SideMenu} from '../component/index';
 import {Colors} from '../res/index';
-import {BottomTabHome,BottomTabNews,BottomTabHoroscope,BottomTabUser} from '../res/Svg';
+import {Home,News,Horoscope,User} from '../res/Svg';
 
 import {
   SplashScreen,
@@ -33,7 +33,6 @@ const MainStackNavigator = () => {
       <Stack.Screen name="LoginSignup" component={LoginSignupScreen} />
       <Stack.Screen name="Login" component={LoginScreen} /> 
       <Stack.Screen name="Signup" component={SignupScreen} />
-      <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Horoscope" component={HoroscopeScreen} />
       <Stack.Screen name="News" component={NewsScreen} />
       <Stack.Screen name="Profile" component={ProfileScreen} />
@@ -65,9 +64,8 @@ const BottomTabsNav = () => {
         component={HomeScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <BottomTabHome
+            <Home
                fill={focused ? Colors.primaryColor : Colors.white}
-              
             />
           ),
         }}
@@ -77,7 +75,7 @@ const BottomTabsNav = () => {
         component={HoroscopeScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <BottomTabNews
+            <News
                fill={focused ? Colors.primaryColor : Colors.white}
             />
           ),
@@ -88,7 +86,7 @@ const BottomTabsNav = () => {
         component={NewsScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <BottomTabHoroscope
+            <Horoscope
                fill={focused ? Colors.primaryColor : Colors.white}
             />
           ),
@@ -99,7 +97,7 @@ const BottomTabsNav = () => {
         component={ProfileScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <BottomTabUser
+            <User
                fill={focused ? Colors.primaryColor : Colors.white}
             />
           ),

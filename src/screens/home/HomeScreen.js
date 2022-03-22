@@ -1,11 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, StyleSheet} from 'react-native';
-import {HomeHeader, CategoryComponent, BannerComponet, AstrologersListComponent} from '../../component/index';
+import {HomeHeader, CategoryComponent, BannerComponet, AstrologersListComponent, Loader} from '../../component/index';
 import {Colors, Strings} from '../../res/index';
 
 const HomeScreen = (props) => {
+
+    const [isLoaderVisible, setIsLoaderVisible]=useState(true)
+
+    useEffect(()=>{
+         setTimeout(()=>{
+             setIsLoaderVisible(false)
+         },3000)
+    },[])
     
     return (
+        <>
         <View style={styles.container}>
              <View style={styles.headerContainer}>
                 <HomeHeader
@@ -35,7 +44,10 @@ const HomeScreen = (props) => {
                     {...props}
                 />
             </View>
+           
         </View>
+        {isLoaderVisible&& <Loader/>}
+        </>
     )
 }
 

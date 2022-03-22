@@ -8,7 +8,7 @@ const Loader = (props)=>{
             <View style={styles.loaderContainer}>
                 <ActivityIndicator 
                      size={'large'} 
-                     color={Colors.primaryColor} 
+                     color={Colors.buttonColor.primaryColor} 
                 />
              </View>
         )
@@ -22,7 +22,7 @@ const styles=StyleSheet.create({
         alignItems: "center",
         position: "absolute",
         justifyContent: "center",
-        backgroundColor: "rgba(0,0,0,0.4)",
+        backgroundColor: "rgba(0,0,0,0.8)",
       },
 })   
 

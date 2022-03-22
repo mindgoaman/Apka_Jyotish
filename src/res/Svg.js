@@ -3,10 +3,10 @@
  import Menu from './assets/menu.svg';
  import Notification from './assets/notification.svg';
  import Wallet from './assets/wallet.svg';
- import BottomTabHome from './assets/bottomTabHome.svg';
- import BottomTabNews from './assets/bottomTabNews.svg';
- import BottomTabUser from './assets/bottomTabUser.svg';
- import BottomTabHoroscope from './assets/bottomTabHoroscope.svg';
+ import Home from './assets/home.svg';
+ import News from './assets/news.svg';
+ import User from './assets/user.svg';
+ import Horoscope from './assets/horoscope.svg';
 
  export {
        Splash,
@@ -14,8 +14,9 @@
        Menu,
        Notification,
        Wallet,
-       BottomTabHome,
-       BottomTabNews,
-       BottomTabHoroscope,
-       BottomTabUser
+       Home,
+       News,
+       User,
+       Horoscope,
+       
  }

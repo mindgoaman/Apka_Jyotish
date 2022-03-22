@@ -23,7 +23,7 @@ export default {
     and: 'and',
     privacyPolicy: 'Privacy Policy',
     countryCode:'+91 - ',
-    ourAstrologers : 'Our Astrologers',
+    astrologersOnline : 'Astrologers Online',
     viewAll: 'View All',
     astrologers: 'Astrologers',
     underDevelopment: 'Under Development',

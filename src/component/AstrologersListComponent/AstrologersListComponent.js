@@ -8,19 +8,25 @@ const AstrologersListComponent = (props) =>{
             return(
                 <View style={styles.usersCardContainer}>
                      <View style={styles.imageContainer}>
-                          {/* <Image
-                              source={Assets.common.userProfile}
-                              style={styles.userProfile}
-                          /> */}
+                        <TouchableOpacity style={{height: GlobalStyle.size.width / 5 , width:  GlobalStyle.size.width / 5, borderRadius: GlobalStyle.size.width / 10, backgroundColor: 'green', justifyContent: 'center', alignItems: 'center'}}>
+                              {/* <Image
+                                 source={Assets.common.call}
+                              /> */}
+                         </TouchableOpacity>
                      </View>
                      <View style={styles.descreptionContainer}>
                          <View style={styles.astrologerNameContainer}>
-                             <Text style={{color: Colors.secondaryColor, fontSize: 18}}>
+                             <Text style={{color: Colors.buttonColor.primaryColor, fontSize: 18}}>
                                  Acharya Ramesh
                              </Text>
+                             <View style={styles.priceContainer}>
+                                 <Text>
+                                     ₹ 30/min.
+                                 </Text>
+                             </View>
                          </View>
                          <View style={styles.astrologerRatingContainer}>
-                             <Text style={{color: 'white', fontSize: 20}}>
+                             <Text style={{color: 'white', fontSize: 30}}>
                                  *
                              </Text>
                              <Text style={{color: 'white'}}>
@@ -28,42 +34,39 @@ const AstrologersListComponent = (props) =>{
                              </Text>
                          </View>
                          <View style={styles.astrologerCategoryContainer}>
-                             <Text style={styles.categoryTxt}>
-                                 Vedic
-                             </Text>
-                             <View style={{height: 10, width: 1.1, backgroundColor: Colors.secondaryColor, marginHorizontal: 5}}>
-                             </View>
-                             <Text style={styles.categoryTxt}>
-                                 Numerlogy
-                             </Text>
-                              <View style={{height: 10, width: 1.1, backgroundColor: Colors.secondaryColor, marginHorizontal: 5}}>
-                             </View>
-                             <Text style={styles.categoryTxt}>
-                                 Vastu
-                             </Text>
-                         </View>
-                         <View style={styles.astrologerCategoryContainer}>
                             <Text style={styles.categoryTxt}>
                                  Hindi
                              </Text>
-                             <View style={{height: 10, width: 1.1, backgroundColor: Colors.secondaryColor, marginHorizontal: 5}}>
+                             <View style={{height: 10, width: 1.1, backgroundColor: Colors.common.white, marginHorizontal: 5}}>
                              </View>
                              <Text style={styles.categoryTxt}>
                                  English
                              </Text>
                          </View>
-                         <View style={styles.astrologerPriceContainer}>
+                         <View style={styles.astrologerCategoryContainer}>
+                             <Text style={styles.categoryTxt}>
+                                 Vedic
+                             </Text>
+                             <View style={{height: 10, width: 1.1, backgroundColor: Colors.common.white, marginHorizontal: 5}}>
+                             </View>
+                             <Text style={styles.categoryTxt}>
+                                 Numerlogy
+                             </Text>
+                              <View style={{height: 10, width: 1.1, backgroundColor: Colors.common.white, marginHorizontal: 5}}>
+                             </View>
+                             <Text style={styles.categoryTxt}>
+                                 Vastu
+                             </Text>
+                         </View>
+                        
+                         {/* <View style={styles.astrologerPriceContainer}>
                             <Text style={styles.categoryTxt}>
                                 12 Per minute
                             </Text>
-                         </View>
+                         </View> */}
                      </View>
                      <View style={styles.iconContainer}>
-                         <TouchableOpacity style={{height: GlobalStyle.size.width / 7 , width:  GlobalStyle.size.width / 7, borderRadius: GlobalStyle.size.width / 14, backgroundColor: 'green', justifyContent: 'center', alignItems: 'center'}}>
-                              {/* <Image
-                                 source={Assets.common.call}
-                              /> */}
-                         </TouchableOpacity>
+                         
                      </View>
                 </View>
             )
@@ -73,7 +76,7 @@ const AstrologersListComponent = (props) =>{
          <View style={styles.container}>
            {!props.isFromViewAll&&<View style={styles.userListHeaderContainer}>
                  <Text style={styles.ourAstrologersTxt}>
-                      {Strings.ourAstrologers}
+                      {Strings.astrologersOnline}
                  </Text>
                  <TouchableOpacity 
                      onPress={()=>props.navigation.navigate('ViewAll')}
@@ -98,29 +101,23 @@ const styles=StyleSheet.create({
      container: {
          flex: 1,
          backgroundColor: Colors.bgColor.primaryColor,
-         borderTopLeftRadius: 30,
-         borderTopRightRadius: 30
+         borderTopLeftRadius: 28,
+         borderTopRightRadius: 28
      },
      userListHeaderContainer: {
          flexDirection: 'row',
          justifyContent: 'space-between',
-          paddingHorizontal: 10,
+          paddingHorizontal: 20,
           alignItems: 'center',
-          paddingTop: 12
+          paddingTop: 12,
      },
      viewAllTxt: {
          fontSize: 16,
-         color: Colors.white
+         color: Colors.buttonColor.primaryColor
      },
      ourAstrologersTxt: {
          fontSize: 24,
-         color: Colors.secondaryColor
-     },
-     OnPressViewAll: {
-         backgroundColor: Colors.secondaryColor,
-         borderRadius: 4,
-         paddingVertical: 6,
-         paddingHorizontal: 9
+         color: Colors.common.white
      },
      usersListContainer: {
         flex: 1
@@ -132,7 +129,10 @@ const styles=StyleSheet.create({
          borderRadius: 10,
          flexDirection:  'row',
          alignItems: 'center',
-         paddingHorizontal: 12
+         paddingHorizontal: 12,
+         borderTopWidth: 1,
+         paddingTop: 15,
+         paddingBottom: 10
      },
      imageContainer: {
          borderRadius: 10
@@ -152,22 +152,31 @@ const styles=StyleSheet.create({
         borderRadius: 5,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
+        alignItems: 'center'
      },
      astrologerCategoryContainer: {
         flexDirection: 'row',
         alignItems: 'center'
      },
      categoryTxt: {
-        color: Colors.secondaryColor
+        color: Colors.common.white
      },
     iconContainer: {
      },
      astrologerNameContainer: {
+         flexDirection: 'row',
      },
     astrologerLanguageContainer: {
      },
      astrologerPriceContainer: {
      },
+     priceContainer: {
+        backgroundColor: Colors.buttonColor.primaryColor,
+        borderRadius: 4,
+        paddingVertical: 6,
+        paddingHorizontal: 9,
+        marginLeft: 50
+    },
     
    
 })

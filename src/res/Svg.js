@@ -2,6 +2,7 @@
  import AppBg from './assets/appBg.svg';
  import Phone from './assets/phone.svg';
  import Menu from './assets/menu.svg';
+ import SideMenuTop from './assets/sideMenuTop.svg';
  import Notification from './assets/notification.svg';
  import Wallet from './assets/wallet.svg';
  import Home from './assets/home.svg';
@@ -20,5 +21,5 @@
        News,
        User,
        Horoscope,
-       
+       SideMenuTop
  }

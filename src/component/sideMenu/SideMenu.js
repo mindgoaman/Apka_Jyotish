@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, FlatList, TouchableOpacity, Image, Text } from 'react-native';
 import { Use } from 'react-native-svg';
 import {Colors,Strings} from '../../res/index';
-import {Home,News,Horoscope,User} from '../../res/Svg';
+import {Home,News,Horoscope,User,SideMenuTop} from '../../res/Svg';
 
 const sideMenuData=[
     {
@@ -40,18 +40,19 @@ const sideMenuData=[
 ]
 
 const SideMenu = (props) => {
-
+    
      const renderSideDrawerContent = (item, index) => {
          return(
-             <View style={{paddingTop: 5, paddingLeft: 60}}>
+             <View style={{paddingTop: 5, paddingLeft: 60,}}>
                  <TouchableOpacity
-                    onPress={()=> item.title=='Home'?props.navigation.closeDrawer():props.navigation.navigate(
+                    onPress={()=> item.title=='Home'?props.navigation.closeDrawer(): item.title=='Logout'?props.navigation.navigate(
                          item.title=='Logout'
-                         ?
+                         &&
                          'LoginSignup'
+                         )
                          :
-                         item.title
-                         )}
+                         alert('Under Development')
+                        }
                     style={{paddingVertical: 10, flexDirection: 'row', alignItems: 'center'}}
                  >    
                      {item.img}
@@ -65,6 +66,7 @@ const SideMenu = (props) => {
 
     return (
         <View style={styles.container}>
+            <SideMenuTop>
             <View style={styles.profileDetailsContainer}>
                 <View
                      style={{height: 100, width: 100, borderRadius: 50, borderWidth: 1, marginTop: 30}}
@@ -80,6 +82,7 @@ const SideMenu = (props) => {
                     </Text>
                 </View>
             </View>
+            </SideMenuTop>
             <View style={{backgroundColor: Colors.tertiary, height: 1.2, width: '95%', alignSelf: 'center' }}>
             </View>
              <View style={styles.flatListContainer}>

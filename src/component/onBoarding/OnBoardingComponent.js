@@ -14,7 +14,7 @@ import {Colors, Strings, Fonts, GlobalStyle} from '../../res/index';
 
 const onBoardingData = Strings.onBoarding.onBoardingData
 
-const OnBoardingComponent = (props) => {
+const OnboardingComponent = (props) => {
     
      const [index, setIndex]=React.useState(0)
 
@@ -228,4 +228,4 @@ const styles=StyleSheet.create({
     }
 })
 
-export default OnBoardingComponent;
+export default OnboardingComponent;

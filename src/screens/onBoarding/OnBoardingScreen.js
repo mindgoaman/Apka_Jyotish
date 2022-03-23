@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import {OnBoardingComponent} from '../../component/index';
+import {OnboardingComponent} from '../../component/index';
 
 /**
 * @description:This is onboarding screen
@@ -12,11 +12,11 @@ import {OnBoardingComponent} from '../../component/index';
 * @modified_on:16/08/2021
 */
 
-const OnBoardingScreen = (props) => {
+const OnboardingScreen = (props) => {
 
      return(
          <View style={styles.container}>
-             <OnBoardingComponent
+             <OnboardingComponent
                  {...props}
              />
          </View>
@@ -29,7 +29,7 @@ const styles=StyleSheet.create({
     },
 })
 
-export default OnBoardingScreen;
+export default OnboardingScreen;
 
 
 // import { connect } from 'react-redux';

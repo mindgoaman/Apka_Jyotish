@@ -6,7 +6,7 @@ import {Splash} from '../../res/Svg';
 const SplashScreen = (props) =>{
      setTimeout(() => {
         props.navigation.replace('OnBoarding')
-      }, 1000)
+      },3000)
 
     return(
         <View style={styles.container}>

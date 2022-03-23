@@ -4,7 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {SideMenu} from '../component/index';
-import {Colors} from '../res/index';
+import {Colors,GlobalStyle} from '../res/index';
 import {Home,News,Horoscope,User} from '../res/Svg';
 
 import {
@@ -17,7 +17,7 @@ import {
   NewsScreen,
   ProfileScreen,
   ViewAllAstrologersScreen,
-  OnBoardingScreen
+  OnboardingScreen
 } from '../screens/index';
 
 //Stack Navigation
@@ -29,7 +29,7 @@ const MainStackNavigator = () => {
          headerShown: false,
       }}>
       <Stack.Screen name="Splash" component={SplashScreen} />
-      <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
+      <Stack.Screen name="OnBoarding" component={OnboardingScreen} />
       <Stack.Screen name="LoginSignup" component={LoginSignupScreen} />
       <Stack.Screen name="Login" component={LoginScreen} /> 
       <Stack.Screen name="Signup" component={SignupScreen} />
@@ -71,22 +71,22 @@ const BottomTabsNav = () => {
         }}
       />
       <Tab.Screen
-        name="Horoscope"
-        component={HoroscopeScreen}
-        options={{
-          tabBarIcon: ({focused}) => (
-            <News
-               fill={focused ? Colors.primaryColor : Colors.white}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
         name="News"
         component={NewsScreen}
         options={{
           tabBarIcon: ({focused}) => (
             <Horoscope
+               fill={focused ? Colors.primaryColor : Colors.white}
+            />
+          ),
+        }}
+      />
+        <Tab.Screen
+        name="Horoscope"
+        component={HoroscopeScreen}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <News
                fill={focused ? Colors.primaryColor : Colors.white}
             />
           ),
@@ -114,11 +114,13 @@ const DrawerNav = () => {
     <Drawer.Navigator
        screenOptions={{
          headerShown: false,
+         drawerStyle: {
+           width: GlobalStyle.size.width/1.86,
+        }
       }}
        drawerContent={props => <SideMenu {...props} />}
     >
-      <Drawer.Screen name="Home" component={BottomTabsNav} />
-      <Drawer.Screen name="Login" component={LoginScreen} />
+       <Drawer.Screen name="Home" component={BottomTabsNav} />
     </Drawer.Navigator>
   );
 };

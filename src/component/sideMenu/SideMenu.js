@@ -6,26 +6,6 @@ import {Home,News,Horoscope,User,SideMenuTop} from '../../res/Svg';
 
 const sideMenuData=[
     {
-        title: 'Home',
-        img: <Home/>
-    },
-    {
-        title: 'Profile',
-        img: <User/>
-    },
-    {
-        title: 'Horoscope',
-        img: <Horoscope/>
-    },
-    {
-        title: 'Astrologers',
-        img: <User/>
-    },
-    {
-        title: 'News',
-        img: <News/>
-    },
-    {
         title: 'Share',
         img: <Home/>
     },
@@ -66,10 +46,10 @@ const SideMenu = (props) => {
 
     return (
         <View style={styles.container}>
-            <SideMenuTop>
+            <SideMenuTop/>
             <View style={styles.profileDetailsContainer}>
                 <View
-                     style={{height: 100, width: 100, borderRadius: 50, borderWidth: 1, marginTop: 30}}
+                     style={{height: 100, width: 100, borderRadius: 50, borderWidth: 1}}
                 />
                 <View style={{paddingTop: 17}}>
                     <Text style={{fontSize: 20, color: Colors.hexaColor}}>
@@ -82,7 +62,6 @@ const SideMenu = (props) => {
                     </Text>
                 </View>
             </View>
-            </SideMenuTop>
             <View style={{backgroundColor: Colors.tertiary, height: 1.2, width: '95%', alignSelf: 'center' }}>
             </View>
              <View style={styles.flatListContainer}>
@@ -98,16 +77,18 @@ const SideMenu = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 10,
+        flex: 1,
         backgroundColor: Colors.white
     },
     profileDetailsContainer: {
-        flex: 3,
-        alignItems: 'center',
-        justifyContent: 'center',
+        // flex: 3,
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right:0
     },
     flatListContainer: {
-        flex: 7
     }
 })
 

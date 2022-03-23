@@ -1,4 +1,4 @@
-import OnBoardingComponent from './onBoarding/OnBoardingComponent';
+import OnboardingComponent from './onboarding/OnboardingComponent';
 import HomeHeader from './homeHeader/HomeHeader';
 import SideMenu from './sideMenu/SideMenu'; 
 import AppButton from './appButton/AppButton'; 
@@ -11,7 +11,7 @@ import Loader from './loader/Loader';
 import OtpComponent from './otpComponent/OtpComponent';
 
 export {
-    OnBoardingComponent,
+    OnboardingComponent,
     HomeHeader,
     SideMenu,
     AppButton,

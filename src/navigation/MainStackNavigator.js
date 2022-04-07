@@ -75,9 +75,9 @@ const BottomTabsNav = () => {
         component={NewsScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <Horoscope
-               fill={focused ? Colors.primaryColor : Colors.white}
-            />
+            <News
+            fill={focused ? Colors.primaryColor : Colors.white}
+         />
           ),
         }}
       />
@@ -86,7 +86,7 @@ const BottomTabsNav = () => {
         component={HoroscopeScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <News
+            <Horoscope
                fill={focused ? Colors.primaryColor : Colors.white}
             />
           ),

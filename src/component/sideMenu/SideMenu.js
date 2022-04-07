@@ -2,20 +2,28 @@ import React from 'react';
 import {View, StyleSheet, FlatList, TouchableOpacity, Image, Text } from 'react-native';
 import { Use } from 'react-native-svg';
 import {Colors,Strings} from '../../res/index';
-import {Home,News,Horoscope,User,SideMenuTop} from '../../res/Svg';
+import {SideMenuTop,MenuHome,MenuAccount,MenuShare,MenuHelp,MenuLogout} from '../../res/Svg';
 
 const sideMenuData=[
     {
+        title: 'Home',
+        img: <MenuHome/>
+    },
+    {
+        title: 'Astrologers',
+        img: <MenuAccount/>
+    },
+    {
         title: 'Share',
-        img: <Home/>
+        img: <MenuShare/>
     },
     {
         title: 'Help',
-        img: <Home/>
+        img: <MenuHelp/>
     },
     {
         title: 'Logout',
-        img: <Home/>
+        img: <MenuLogout/>
     },
 ]
 
@@ -23,7 +31,7 @@ const SideMenu = (props) => {
     
      const renderSideDrawerContent = (item, index) => {
          return(
-             <View style={{paddingTop: 5, paddingLeft: 60,}}>
+             <View style={{paddingTop: 30, paddingLeft: 50}}>
                  <TouchableOpacity
                     onPress={()=> item.title=='Home'?props.navigation.closeDrawer(): item.title=='Logout'?props.navigation.navigate(
                          item.title=='Logout'

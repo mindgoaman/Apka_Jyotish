@@ -1,8 +1,18 @@
 import React from 'react';
 import {View, StyleSheet, FlatList, TouchableOpacity, Image, Text } from 'react-native';
 import { Use } from 'react-native-svg';
-import {Colors,Strings} from '../../res/index';
+import {Colors,Strings,Fonts, GlobalStyle} from '../../res/index';
 import {SideMenuTop,MenuHome,MenuAccount,MenuShare,MenuHelp,MenuLogout} from '../../res/Svg';
+
+/**
+* @description:This is Side Menu Screen
+* @author:Aman Sharma
+* @created_on:18/03/2022
+* @param:
+* @return:
+* @modified_by:Aman Sharma
+* @modified_on:11/04/2022
+*/
 
 const sideMenuData=[
     {
@@ -54,13 +64,15 @@ const SideMenu = (props) => {
 
     return (
         <View style={styles.container}>
-            <SideMenuTop/>
+            <SideMenuTop
+                 width={GlobalStyle.size.width/1.85}
+            />
             <View style={styles.profileDetailsContainer}>
                 <View
                      style={{height: 100, width: 100, borderRadius: 50, borderWidth: 1}}
                 />
                 <View style={{paddingTop: 17}}>
-                    <Text style={{fontSize: 20, color: Colors.hexaColor}}>
+                    <Text style={{fontSize: 20, color: Colors.hexaColor, fontFamily: Fonts.Lato.Black}}>
                         Arjun Malhotra
                     </Text>
                 </View>

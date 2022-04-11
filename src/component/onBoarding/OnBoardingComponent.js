@@ -4,12 +4,12 @@ import {Colors, Strings, Fonts, GlobalStyle} from '../../res/index';
 
 /**
 * @description:This is onBoardingComponent
-* @author:Vibhishan
+* @author:Aman Sharma
 * @created_on:18/03/2022
 * @param:
 * @return:
-* @modified_by:Vibhishan
-* @modified_on:18/03/2022
+* @modified_by:Aman Sharma
+* @modified_on:10/04/2022
 */
 
 const onBoardingData = Strings.onBoarding.onBoardingData

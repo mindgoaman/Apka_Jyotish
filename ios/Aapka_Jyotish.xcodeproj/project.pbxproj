@@ -30,6 +30,7 @@
 		00E356EE1AD99517003FC87E /* Aapka_JyotishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Aapka_JyotishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* Aapka_JyotishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aapka_JyotishTests.m; sourceTree = "<group>"; };
+		0971866A598A4FFFA28920AF /* Lato-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Italic.ttf"; path = "../src/res/assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Aapka_Jyotish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aapka_Jyotish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Aapka_Jyotish/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Aapka_Jyotish/AppDelegate.m; sourceTree = "<group>"; };
@@ -37,13 +38,22 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Aapka_Jyotish/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Aapka_Jyotish/main.m; sourceTree = "<group>"; };
 		51D89D2E130732E7BE3022DD /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aapka_Jyotish-Aapka_JyotishTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6D08E89C5844999947BA44 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-ThinItalic.ttf"; path = "../src/res/assets/fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		60F7CA2DF1AA4565B60F99DB /* Lato-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Black.ttf"; path = "../src/res/assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
+		7DF9DD9A5410475B9DEBFF87 /* Lato-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Regular.ttf"; path = "../src/res/assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Aapka_Jyotish/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6468ABE35B9B63868BE85AF /* Pods-Aapka_Jyotish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish.debug.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish.debug.xcconfig"; sourceTree = "<group>"; };
+		AEAB695DEF6149EFA77E48DD /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-BlackItalic.ttf"; path = "../src/res/assets/fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B04346D48B59451DA10ED894 /* Lato-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Light.ttf"; path = "../src/res/assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
 		B62053560F01446EC011D7C3 /* Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9D487E22740417A8D27CCB7 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-LightItalic.ttf"; path = "../src/res/assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		CA558610CB4C4BDD99E5A1A3 /* Lato-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Bold.ttf"; path = "../src/res/assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		D874A9AEDD034D0B93B03017 /* Lato-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Thin.ttf"; path = "../src/res/assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
 		DADCD5015B3C3514DC9B3D5B /* Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig"; sourceTree = "<group>"; };
 		E599F2D209FE1AF87D4E113C /* Pods-Aapka_Jyotish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish.release.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish.release.xcconfig"; sourceTree = "<group>"; };
 		EC5542B24CC0630A978DA569 /* libPods-Aapka_Jyotish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aapka_Jyotish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F7FB4BAF7397476285C55DD9 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-BoldItalic.ttf"; path = "../src/res/assets/fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +114,6 @@
 				B62053560F01446EC011D7C3 /* Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig */,
 				DADCD5015B3C3514DC9B3D5B /* Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,6 +125,23 @@
 				51D89D2E130732E7BE3022DD /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59FCBEB9174D43ACAB3EB19D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60F7CA2DF1AA4565B60F99DB /* Lato-Black.ttf */,
+				AEAB695DEF6149EFA77E48DD /* Lato-BlackItalic.ttf */,
+				CA558610CB4C4BDD99E5A1A3 /* Lato-Bold.ttf */,
+				F7FB4BAF7397476285C55DD9 /* Lato-BoldItalic.ttf */,
+				0971866A598A4FFFA28920AF /* Lato-Italic.ttf */,
+				B04346D48B59451DA10ED894 /* Lato-Light.ttf */,
+				B9D487E22740417A8D27CCB7 /* Lato-LightItalic.ttf */,
+				7DF9DD9A5410475B9DEBFF87 /* Lato-Regular.ttf */,
+				D874A9AEDD034D0B93B03017 /* Lato-Thin.ttf */,
+				5C6D08E89C5844999947BA44 /* Lato-ThinItalic.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -134,6 +160,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				23FA182BCACC8179FAB9168F /* Pods */,
+				59FCBEB9174D43ACAB3EB19D /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";

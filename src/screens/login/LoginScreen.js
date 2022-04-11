@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import {View, Text, Image, StyleSheet} from  'react-native';
-import {Colors, Strings } from '../../res/index';
+import {Colors, Strings, ResponsiveUi} from '../../res/index';
 import {AppButton,HomeHeader,TextInputComponent} from '../../component/index'
 import {AppBg,Phone} from '../../res/Svg';
+import {widthToDp,heightToDp} from '../../res/ResponsiveUi';
 
 const LoginScreen = (props) => {
 
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
          flex: 1,
          paddingHorizontal: 31,
          position: "absolute",
-         bottom: 50,
+         bottom: heightToDp('4%'),
          left: 0,
          right: 0
     },
@@ -87,7 +88,7 @@ const styles = StyleSheet.create({
          paddingBottom: 56
     },
     byContinuingPPTNCTxt: {
-         fontSize: 14,
+         fontSize: widthToDp('2%'),
          textAlign: 'center',
          color: Colors.textColor.tertiary,
     }

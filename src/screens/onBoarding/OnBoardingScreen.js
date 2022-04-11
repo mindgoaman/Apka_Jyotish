@@ -4,12 +4,12 @@ import {OnboardingComponent} from '../../component/index';
 
 /**
 * @description:This is onboarding screen
-* @author:Vibhishan
-* @created_on:18/05/2021
+* @author:Aman Sharma
+* @created_on:18/03/2022
 * @param:
 * @return:
-* @modified_by:Vibhishan
-* @modified_on:16/08/2021
+* @modified_by:Aman Sharma
+* @modified_on:11/04/2020
 */
 
 const OnboardingScreen = (props) => {

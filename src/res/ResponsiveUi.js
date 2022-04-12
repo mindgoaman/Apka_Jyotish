@@ -13,13 +13,19 @@ import {Dimensions,PixelRatio} from 'react-native';
 const {height, width}=Dimensions.get('window');
 
 const widthToDp=number=>{
-    let givenWidth=typeof number==Number?number:parseFloat(number)
-    return PixelRatio.roundToNearestPixel(layoutSize=(width*givenWidth)/100)
+      let givenWidth=typeof number==Number?number:parseFloat(number)
+      return PixelRatio.roundToNearestPixel(layoutSize=(width*givenWidth)/100)
 }
 
 const heightToDp=number=>{
-    let givenHeight=typeof number==Number?number:parseFloat(number)
-    return PixelRatio.roundToNearestPixel(layoutSize=(height*givenHeight)/100)
+      let givenHeight=typeof number==Number?number:parseFloat(number)
+      return PixelRatio.roundToNearestPixel(layoutSize=(height*givenHeight)/100)
 }
+
+// const listenToOrientationChanages=ref=>{
+//       Dimensions.addEventListener(handler=(newDimension)=>{
+//       console.log("New dimensions",newDimension)
+//      })
+// }
 
 export {widthToDp,heightToDp}

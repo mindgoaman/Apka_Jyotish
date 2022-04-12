@@ -1,13 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import {View, Text, Image, StyleSheet} from  'react-native';
 import {Colors, Strings, ResponsiveUi} from '../../res/index';
 import {AppButton,HomeHeader,TextInputComponent} from '../../component/index'
 import {AppBg,Phone} from '../../res/Svg';
-import {widthToDp,heightToDp} from '../../res/ResponsiveUi';
+import {widthToDp,heightToDp,listenToOrientationChanages} from '../../res/ResponsiveUi';
 
 const LoginScreen = (props) => {
 
     const [mobile, setMobile]=useState('')
+    useEffect(()=>{
+         listenToOrientationChanages()
+    },[])
     
     return( 
         <View style={styles.container}>

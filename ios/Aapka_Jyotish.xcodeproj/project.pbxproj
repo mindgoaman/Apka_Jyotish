@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		50925E11B5C785113220B6FB /* libPods-Aapka_Jyotish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5542B24CC0630A978DA569 /* libPods-Aapka_Jyotish.a */; };
-		75C495AE952AAB6BEE8575AB /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D89D2E130732E7BE3022DD /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C827BBE4F8FE7C247D7568EA /* libPods-Aapka_Jyotish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B447FAF4746AFBD874B09AA8 /* libPods-Aapka_Jyotish.a */; };
+		DC03EC555813F32B64185F4A /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51169538B33991E27C0E7911 /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 		00E356EE1AD99517003FC87E /* Aapka_JyotishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Aapka_JyotishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* Aapka_JyotishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aapka_JyotishTests.m; sourceTree = "<group>"; };
+		06BAF9B33CB55D91392D7E2F /* Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0971866A598A4FFFA28920AF /* Lato-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Italic.ttf"; path = "../src/res/assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Aapka_Jyotish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aapka_Jyotish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Aapka_Jyotish/AppDelegate.h; sourceTree = "<group>"; };
@@ -37,23 +38,22 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Aapka_Jyotish/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Aapka_Jyotish/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Aapka_Jyotish/main.m; sourceTree = "<group>"; };
-		51D89D2E130732E7BE3022DD /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aapka_Jyotish-Aapka_JyotishTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E4E8E1E64A0CC09BA34590 /* Pods-Aapka_Jyotish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish.debug.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish.debug.xcconfig"; sourceTree = "<group>"; };
+		51169538B33991E27C0E7911 /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aapka_Jyotish-Aapka_JyotishTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6D08E89C5844999947BA44 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-ThinItalic.ttf"; path = "../src/res/assets/fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		60F7CA2DF1AA4565B60F99DB /* Lato-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Black.ttf"; path = "../src/res/assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
 		7DF9DD9A5410475B9DEBFF87 /* Lato-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Regular.ttf"; path = "../src/res/assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Aapka_Jyotish/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A6468ABE35B9B63868BE85AF /* Pods-Aapka_Jyotish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish.debug.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish.debug.xcconfig"; sourceTree = "<group>"; };
 		AEAB695DEF6149EFA77E48DD /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-BlackItalic.ttf"; path = "../src/res/assets/fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
 		B04346D48B59451DA10ED894 /* Lato-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Light.ttf"; path = "../src/res/assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
-		B62053560F01446EC011D7C3 /* Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B447FAF4746AFBD874B09AA8 /* libPods-Aapka_Jyotish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aapka_Jyotish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D487E22740417A8D27CCB7 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-LightItalic.ttf"; path = "../src/res/assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		CA558610CB4C4BDD99E5A1A3 /* Lato-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Bold.ttf"; path = "../src/res/assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
 		D874A9AEDD034D0B93B03017 /* Lato-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Thin.ttf"; path = "../src/res/assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
-		DADCD5015B3C3514DC9B3D5B /* Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig"; sourceTree = "<group>"; };
-		E599F2D209FE1AF87D4E113C /* Pods-Aapka_Jyotish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish.release.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish.release.xcconfig"; sourceTree = "<group>"; };
-		EC5542B24CC0630A978DA569 /* libPods-Aapka_Jyotish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aapka_Jyotish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E457C22EACE005372BDA815B /* Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F7FB4BAF7397476285C55DD9 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-BoldItalic.ttf"; path = "../src/res/assets/fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FB5D0049EC5FC2E4C55BF4FE /* Pods-Aapka_Jyotish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aapka_Jyotish.release.xcconfig"; path = "Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C495AE952AAB6BEE8575AB /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a in Frameworks */,
+				DC03EC555813F32B64185F4A /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50925E11B5C785113220B6FB /* libPods-Aapka_Jyotish.a in Frameworks */,
+				C827BBE4F8FE7C247D7568EA /* libPods-Aapka_Jyotish.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,10 +109,10 @@
 		23FA182BCACC8179FAB9168F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A6468ABE35B9B63868BE85AF /* Pods-Aapka_Jyotish.debug.xcconfig */,
-				E599F2D209FE1AF87D4E113C /* Pods-Aapka_Jyotish.release.xcconfig */,
-				B62053560F01446EC011D7C3 /* Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig */,
-				DADCD5015B3C3514DC9B3D5B /* Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig */,
+				36E4E8E1E64A0CC09BA34590 /* Pods-Aapka_Jyotish.debug.xcconfig */,
+				FB5D0049EC5FC2E4C55BF4FE /* Pods-Aapka_Jyotish.release.xcconfig */,
+				06BAF9B33CB55D91392D7E2F /* Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig */,
+				E457C22EACE005372BDA815B /* Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -121,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				EC5542B24CC0630A978DA569 /* libPods-Aapka_Jyotish.a */,
-				51D89D2E130732E7BE3022DD /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a */,
+				B447FAF4746AFBD874B09AA8 /* libPods-Aapka_Jyotish.a */,
+				51169538B33991E27C0E7911 /* libPods-Aapka_Jyotish-Aapka_JyotishTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,12 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Aapka_JyotishTests" */;
 			buildPhases = (
-				D70E93D4BCC4075BB17E6F89 /* [CP] Check Pods Manifest.lock */,
+				A93CE9741A0EC4328C30A0A2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				71A7032AB7926E6932E75673 /* [CP] Embed Pods Frameworks */,
-				19965B368E60D7174BABB21F /* [CP] Copy Pods Resources */,
+				11449D8F8377BE16608DE1D0 /* [CP] Embed Pods Frameworks */,
+				E4A5CCC29FF68FD10CE2F64B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,14 +204,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Aapka_Jyotish" */;
 			buildPhases = (
-				39B307131074D9888A21D9D3 /* [CP] Check Pods Manifest.lock */,
+				F83319DE5FC4FB8A1E2F9779 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				FCBAB18740A2C4B0E559D18B /* [CP] Embed Pods Frameworks */,
-				EEE9CA6A8F942D4A0D585F88 /* [CP] Copy Pods Resources */,
+				EFAE7F8868ACC68FEBDC2293 /* [CP] Embed Pods Frameworks */,
+				614F25FC9426FF938E6D8322 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,46 +292,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		19965B368E60D7174BABB21F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		39B307131074D9888A21D9D3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Aapka_Jyotish-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71A7032AB7926E6932E75673 /* [CP] Embed Pods Frameworks */ = {
+		11449D8F8377BE16608DE1D0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,7 +309,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D70E93D4BCC4075BB17E6F89 /* [CP] Check Pods Manifest.lock */ = {
+		614F25FC9426FF938E6D8322 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A93CE9741A0EC4328C30A0A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,24 +348,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EEE9CA6A8F942D4A0D585F88 /* [CP] Copy Pods Resources */ = {
+		E4A5CCC29FF68FD10CE2F64B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish-Aapka_JyotishTests/Pods-Aapka_Jyotish-Aapka_JyotishTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCBAB18740A2C4B0E559D18B /* [CP] Embed Pods Frameworks */ = {
+		EFAE7F8868ACC68FEBDC2293 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,6 +380,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aapka_Jyotish/Pods-Aapka_Jyotish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83319DE5FC4FB8A1E2F9779 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aapka_Jyotish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -456,7 +456,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B62053560F01446EC011D7C3 /* Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig */;
+			baseConfigurationReference = 06BAF9B33CB55D91392D7E2F /* Pods-Aapka_Jyotish-Aapka_JyotishTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -483,7 +483,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DADCD5015B3C3514DC9B3D5B /* Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig */;
+			baseConfigurationReference = E457C22EACE005372BDA815B /* Pods-Aapka_Jyotish-Aapka_JyotishTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -507,7 +507,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6468ABE35B9B63868BE85AF /* Pods-Aapka_Jyotish.debug.xcconfig */;
+			baseConfigurationReference = 36E4E8E1E64A0CC09BA34590 /* Pods-Aapka_Jyotish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -533,7 +533,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E599F2D209FE1AF87D4E113C /* Pods-Aapka_Jyotish.release.xcconfig */;
+			baseConfigurationReference = FB5D0049EC5FC2E4C55BF4FE /* Pods-Aapka_Jyotish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -612,7 +612,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -671,7 +670,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;

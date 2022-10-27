@@ -1,5 +1,5 @@
 import SplashScreen from '../screens/splashScreen/SplashScreen';
-import OnboardingScreen from '../screens/onboarding/OnboardingScreen';
+import OnboardingScreen from './onboarding/OnboardingScreen';
 import LoginSignupScreen from '../screens/loginSignUp/LoginSignUpScreen';
 import SignupScreen from '../screens/signUp/SignUpScreen';
 import LoginScreen from '../screens/login/LoginScreen';
